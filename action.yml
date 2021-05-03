@@ -6,6 +6,12 @@ inputs:
     description: 'Report format Test'
     required: true
     default: 'html'
+  path:  # id of input
+    description: 'Source Location'
+    required: true
+    default: '/github/workspace'
 runs:
   using: 'docker'
   image: 'docker://mantisware/lic_report:latest' #'Dockerfile'
+  args:
+    - ${{ inputs.format }} ${{ inputs.path }}

@@ -1,4 +1,6 @@
-on: [push]
+on:
+  push:
+    branches: [ main ]
 
 jobs:
   lic_report:
@@ -7,4 +9,6 @@ jobs:
     steps:
       - name: Licenses Report Action Step
         id: lic_report
-        uses: WaldoMarais/testDockerActions@v2
+        uses: WaldoMarais/testDockerActions@latest
+        with:
+          format: 'html'
