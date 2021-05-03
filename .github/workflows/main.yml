@@ -7,4 +7,4 @@ jobs:
     steps:
       - name: Licenses Report Action Step
         id: lic_report
-        uses: WaldoMarais/testDockerActions@v1
+        uses: WaldoMarais/testDockerActions@v2
