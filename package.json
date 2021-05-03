@@ -1,0 +1,19 @@
+{
+  "name": "testdockeractions",
+  "version": "1.0.0",
+  "description": "## Hello world docker action",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-fsl:WaldoMarais/testDockerActions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongo": "^0.1.0"
+  }
+}

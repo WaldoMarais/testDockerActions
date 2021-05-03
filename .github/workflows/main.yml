@@ -1,12 +1,12 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  lic_report:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Job to check Licenses
     steps:
     - name: Hello world action step
-      id: hello
+      id: lic_report
       uses: WaldoMarais/testDockerActions@v1
       with:
         who-to-greet: 'Waldo'

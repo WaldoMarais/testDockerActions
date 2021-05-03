@@ -11,6 +11,6 @@ outputs:
     description: 'The time we greeted you'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://mantisware/lic_report:latest' #'Dockerfile'
   args:
     - ${{ inputs.who-to-greet }}
