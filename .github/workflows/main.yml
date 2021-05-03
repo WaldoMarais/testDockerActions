@@ -5,11 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Job to check Licenses
     steps:
-    - name: Hello world action step
-      id: lic_report
-      uses: WaldoMarais/testDockerActions@v1
-      with:
-        who-to-greet: 'Waldo'
-    # Use the output from the `hello` step
-    - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
+      - name: Licenses Report Action Step
+        id: lic_report
+        uses: WaldoMarais/testDockerActions@v1

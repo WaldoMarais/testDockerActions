@@ -6,11 +6,6 @@ inputs:
     description: 'Report format Test'
     required: true
     default: 'html'
-outputs:
-  message: # id of output
-    description: 'Was the report generation successful'
 runs:
   using: 'docker'
   image: 'docker://mantisware/lic_report:latest' #'Dockerfile'
-  args:
-    - ${{ inputs.format }}
