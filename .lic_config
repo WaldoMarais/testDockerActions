@@ -1,0 +1,31 @@
+{
+  "type": "html",
+  "path": "./LicenseReports",
+  "--CI_Options": "github | gitlab | circleci",
+  "github": {
+    "user": {
+      "name": "test",
+      "email": "test@test.com"
+    },
+    "repo": "https://github.com/WaldoMarais/testDockerActions",
+    "branch": "lic_report"
+  },
+  "licenses": {
+    "whiteList": [
+      "MIT"
+    ],
+    "blackList": [
+      "Apache 2.0"
+    ]
+  },
+  "dependencies": [
+    "express",
+    "mongo"
+  ],  
+  "notifications": {
+    "email": {
+      "subject": "License Report",
+      "recipients": ["waldo@fullstacklabs.co"]
+    }
+  }
+}

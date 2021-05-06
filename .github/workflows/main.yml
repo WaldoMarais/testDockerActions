@@ -7,8 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Job to check Licenses
     steps:
-      - name: Licenses Report Action Step
+      - name: Licenses Report Action Step 🛎️
         id: lic_report
         uses: WaldoMarais/testDockerActions@v3
         with:
           format: 'html'
+          path: '/github/workspace'

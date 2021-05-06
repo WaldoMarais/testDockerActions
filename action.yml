@@ -1,6 +1,12 @@
 # action.yml
 name: 'License Report'
 description: 'Generate project license report'
+runs:
+  using: 'docker'
+  image: 'docker://mantisware/lic_report:latest' #'Dockerfile'
+  args:
+    - ${{ inputs.format }}
+    - ${{ inputs.path }}
 inputs:
   format:  # id of input
     description: 'Report format Test'
@@ -10,9 +16,3 @@ inputs:
     description: 'Source Location'
     required: true
     default: '/github/workspace'
-runs:
-  using: 'docker'
-  image: 'docker://mantisware/lic_report:latest' #'Dockerfile'
-  args:
-    - ${{ inputs.format }}
-    - ${{ inputs.path }}
