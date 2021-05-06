@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Licenses Report Action Step 🛎️
         id: lic_report
-        uses: WaldoMarais/testDockerActions@v3
+        uses: WaldoMarais/testDockerActions@v4
         with:
           format: 'html'
           path: '/github/workspace'
