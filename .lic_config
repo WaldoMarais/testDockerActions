@@ -16,7 +16,7 @@
     ],
     "blackList": [
       "Apache 2.0"
-    ]
+    ] 
   },
   "dependencies": [
     "express",
