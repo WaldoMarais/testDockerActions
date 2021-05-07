@@ -1,6 +1,6 @@
 {
   "name": "testdockeractions",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "## Hello world docker action",
   "main": "index.js",
   "scripts": {
