@@ -4,7 +4,9 @@
   "description": "## Hello world docker action",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ghp_deply":"gh-pages -d testGHP",
+    "docker_test": "docker run --name lic_report_test -v $PWD:/github/workspace -it mantisware/lic_report"
   },
   "repository": {
     "type": "git",
@@ -14,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "gh-pages": "^3.1.0",
     "mongo": "^0.1.0"
   }
 }

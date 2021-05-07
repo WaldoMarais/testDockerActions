@@ -10,6 +10,7 @@
     "repo": "https://github.com/WaldoMarais/testDockerActions",
     "branch": "lic_report"
   },
+  "githubPages": true,
   "licenses": {
     "whiteList": [
       "MIT"
