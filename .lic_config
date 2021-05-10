@@ -7,7 +7,11 @@
       "name": "test",
       "email": "test@test.com"
     },
-    "repo": "https://github.com/WaldoMarais/testDockerActions",
+    "repo": "git@github.com:WaldoMarais/testDockerActions.git",
+    "ssh_key": {
+      "pub": "id_rsa.pub",
+      "pvt": "id_rsa"
+    },
     "branch": "lic_report"
   },
   "githubPages": true,
@@ -25,8 +29,20 @@
   ],  
   "notifications": {
     "email": {
+      "from": "LicenseReport <no-reply@fullstacklabs.co>",
       "subject": "License Report",
-      "recipients": ["waldo@fullstacklabs.co"]
+      "recipients": ["waldo@fullstacklabs.co"],
+      "server": {
+        "smtp": {
+          "host": "",
+          "port": "",
+          "secure": ""
+        },
+        "auth": {
+          "user": "",
+          "pass": ""
+        }
+      }
     }
   }
 }
