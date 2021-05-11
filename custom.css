@@ -1,0 +1,9 @@
+/* Custom styling for HTML report */
+body {
+  color: #fff;
+  background-color: #000;
+}
+
+.hero-unit{
+  background-color: #2a2a2a !important;
+}
